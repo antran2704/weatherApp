@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+body.cool {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url("../imgs/cool.jpg") no-repeat center/cover;
+
+}
+body.cold {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url("../imgs/cold.jpg") no-repeat center/cover;
+}
+body.hot {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url("../imgs/warm.jpg") no-repeat center/cover;
+
+}
+
+body.cool .weather {
+    background-image: url("../imgs/cool.jpg");
+}
+body.cold .weather {
+    background-image: url("../imgs/cold.jpg");
+}
+body.hot .weather {
+    background-image: url("../imgs/warm.jpg") ;
+
+}
+.weather {
+    min-width: 400px;
+    height: 600px;
+    background: no-repeat center/cover;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all linear 0.2s;
+}
+.search {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 0px 15px 0 15px;
+    opacity: 0.6;
+    transition: all linear 0.2s;
+}
+
+.search:focus {
+    opacity: 1;
+    border-radius: 15px 0px 15px 0px;
+}
+
+.content {
+    margin: 40px 0;
+}
+
+.place {
+    text-align: center;
+}
+.place span {
+    font-size: 30px;
+    color: white;
+}
+
+.city {
+
+}
+
+.capital {
+
+}
+
+.time {
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+}
+
+.temperature {
+    width: 80%;
+    color: white;
+    margin: 30px auto;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 65px;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-shadow: 4px 4px rgb(0 0 0 / 60%);
+    font-weight: 800;
+    border-radius: 15px;
+    box-shadow: 2px 2px 0 2px rgb(0 0 0 / 50%);
+}
+
+.value {
+
+}
+
+
+.short-desc {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    text-shadow: 3px 3px rgb(0 0 0 / 40%);
+}
+
+.more-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-top: 40px;
+}
+.more-desc div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.visible {
+
+}
+
+.wind {
+
+}
+
+.sun {
+
+}
